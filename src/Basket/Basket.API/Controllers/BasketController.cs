@@ -86,9 +86,10 @@ namespace Basket.API.Controllers
             {
                 _eventBus.PublishBasketChckout(EventBusConstants.BasketCheckoutQueue, eventMessage);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-             
+                _logger.LogError(ex, "ERROR Publishing integration event: {EventId} from {AppName}", eventMessage.RequestId, "Basket");
+                throw;
             }
 
             return Accepted();
