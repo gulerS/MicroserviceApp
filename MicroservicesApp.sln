@@ -27,13 +27,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusRabbitMQ", "src\com
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{344C648C-5483-41C3-9471-C9198403D596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.API", "src\Ordering\Ordering.API\Ordering.API.csproj", "{E23C4178-0C16-4852-86B9-989E7A38FCB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.API", "src\Ordering\Ordering.API\Ordering.API.csproj", "{E23C4178-0C16-4852-86B9-989E7A38FCB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Core", "src\Ordering\Ordering.Core\Ordering.Core.csproj", "{1197045E-F243-40F3-8F73-69A14B41A5C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Core", "src\Ordering\Ordering.Core\Ordering.Core.csproj", "{1197045E-F243-40F3-8F73-69A14B41A5C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "src\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{63507B52-04C5-4B6A-B986-5F38D1E3F367}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "src\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{63507B52-04C5-4B6A-B986-5F38D1E3F367}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "src\Ordering\Ordering.Application\Ordering.Application.csproj", "{4C003173-099D-44C0-99F0-D1033B288B27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "src\Ordering\Ordering.Application\Ordering.Application.csproj", "{4C003173-099D-44C0-99F0-D1033B288B27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{10493F56-6A94-491D-8279-1D18A774D47C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "src\APIGateways\APIGateway\APIGateway.csproj", "{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebPage", "WebPage", "{612BA28A-B428-4144-97B9-7B79E9A3ED9C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebPage", "src\WebApp\WebPage\WebPage.csproj", "{31345ED4-F874-4858-B721-766B15C7C2C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +81,14 @@ Global
 		{4C003173-099D-44C0-99F0-D1033B288B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C003173-099D-44C0-99F0-D1033B288B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C003173-099D-44C0-99F0-D1033B288B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31345ED4-F874-4858-B721-766B15C7C2C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31345ED4-F874-4858-B721-766B15C7C2C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31345ED4-F874-4858-B721-766B15C7C2C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31345ED4-F874-4858-B721-766B15C7C2C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -89,6 +105,10 @@ Global
 		{1197045E-F243-40F3-8F73-69A14B41A5C1} = {344C648C-5483-41C3-9471-C9198403D596}
 		{63507B52-04C5-4B6A-B986-5F38D1E3F367} = {344C648C-5483-41C3-9471-C9198403D596}
 		{4C003173-099D-44C0-99F0-D1033B288B27} = {344C648C-5483-41C3-9471-C9198403D596}
+		{10493F56-6A94-491D-8279-1D18A774D47C} = {0785A907-B5C6-493E-B46D-213FD7B4B480}
+		{3FA42D7A-B438-4FD5-82F1-37BDA62C82C1} = {10493F56-6A94-491D-8279-1D18A774D47C}
+		{612BA28A-B428-4144-97B9-7B79E9A3ED9C} = {0785A907-B5C6-493E-B46D-213FD7B4B480}
+		{31345ED4-F874-4858-B721-766B15C7C2C1} = {612BA28A-B428-4144-97B9-7B79E9A3ED9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EB29694F-DF79-49DB-B2C2-5374E3FD3DB4}

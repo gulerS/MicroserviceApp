@@ -78,3 +78,30 @@ services:
     ports:
       - "8002:80"
 
+
+  apigateway:
+    container_name: apigateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - catalog.api
+      - basket.api
+      - ordering.api
+    ports:
+      - "7000:80"
+
+  webpage:
+        container_name: webpage
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - "ApiSettings:BaseAddress=apigateway"
+        depends_on:
+            - catalog.api
+            - basket.api
+            - ordering.api
+            - apigateway
+        volumes:
+            - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+            - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+        ports:
+            - "8003:80"
